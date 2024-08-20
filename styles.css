@@ -3,22 +3,21 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Elegant and modern font stack */
     margin: 0;
     padding: 0;
-    color: #f4f4f4; /* Light color for text to contrast against dark background */
-    background-color: #1c1c1c; /* Matte black background for the entire page */
+    color: #333;
+    background-color: #121212; /* Matte black background */
 }
 
 header {
-    background-color: #000000; /* Matte black background for header */
-    color: #d4af37; /* Darker gold text color for contrast */
+    background-color: #333; /* Dark background for header */
+    color: #FFD700; /* Gold color for header text */
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for a more subtle effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2rem; /* Larger font size for the main heading */
     margin: 0;
-    color: #d4af37; /* Darker gold color for main heading */
 }
 
 /* Navigation Styles */
@@ -34,14 +33,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #d4af37; /* Darker gold text color for navigation links */
+    color: #FFD700; /* Gold color for navigation links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #b88d3d; /* Slightly darker gold on hover */
+    color: #1e90ff; /* Change to a blue shade on hover */
 }
 
 /* Main Section Styles */
@@ -54,30 +53,22 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #2a2a2a; /* Dark matte grey for sections */
+    background-color: #1e1e1e; /* Darker background for sections */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Softer shadow for sections */
-}
-
-section h2 {
-    color: #d4af37; /* Darker gold color for section headings */
-}
-
-section h3 {
-    color: #d4af37; /* Darker gold color for subheadings */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensures images fit within their container */
+    height: auto;    /* Maintains aspect ratio */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer shadow for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
 footer {
-    background-color: #000000; /* Matte black background for footer */
-    color: #d4af37; /* Darker gold text color for contrast */
+    background-color: #333;
+    color: #FFD700; /* Gold color for footer text */
     padding: 1rem;
     text-align: center;
 }
@@ -95,15 +86,13 @@ label {
 input, textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #555; /* Darker border color */
+    border: 1px solid #ddd;
     border-radius: 4px;
-    background-color: #333; /* Dark background for inputs */
-    color: #f4f4f4; /* Light text color for inputs */
 }
 
 button {
-    background-color: #d4af37; /* Darker gold background for button */
-    color: #000000; /* Black text for button */
+    background-color: #007bff;
+    color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
@@ -113,5 +102,33 @@ button {
 }
 
 button:hover {
-    background-color: #b88d3d; /* Slightly darker gold on hover */
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Adjust header size for mobile */
+    }
+    
+    nav ul {
+        text-align: center; /* Center align navigation items on mobile */
+    }
+    
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 0.5rem 0; /* Adjust margins for mobile */
+    }
+
+    main {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    section {
+        padding: 1rem; /* Ensure padding is appropriate on mobile */
+    }
+
+    button {
+        font-size: 0.9rem; /* Slightly smaller buttons on mobile */
+    }
 }
