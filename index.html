@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Series</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylessheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>iPhone 15 Series</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#specs">Specs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The iPhone 15 series includes the latest advancements in Apple's smartphone technology. With improved performance, enhanced camera capabilities, and new design elements, these models offer something for everyone. Discover the features and benefits of the iPhone 15 and iPhone 15 Pro</p>
+        </section>
+        <section id="models">
+            <h2>Models</h2>
+            <div>
+                <h3>iPhone 15</h3>
+                <img src="images/iphone-15-black.jpg" alt="iPhone 15 Black">
+                <p>The iPhone 15 offers a sleek design with a powerful A16 Bionic chip. It features a 6.1-inch Super Retina XDR display and improved battery life. The iPhone 15 is perfect for users who want top-notch performance and a beautiful display.</p>
+
+            </div>
+            <div>
+                <h3>iPhone 15 Pro</h3>
+                <img src="images/iphone-15-pro.jpg" alt="iPhone 15 Pro">
+                <p>The iPhone 15 Pro takes things to the next level with a 6.7-inch ProMotion display and a new A17 Bionic chip. It features a pro-grade camera system with advanced capabilities, including improved night mode and enhanced optical zoom. The iPhone 15 Pro is ideal for professionals and enthusiasts</p>
+            </div>
+            <section id="colors">
+                <h2>Colors</h2>
+                <p>Details about available colors will be listed here.</p>
+                <h3>Iphone 15 Colors:</h3>
+                <ul>
+                    <li>Black</li>
+                    <li>White</li>
+                    <li>Blue</li>
+                    <li>Red</li>
+                </ul>
+                <h3>Iphone 15 Pro Colors:</h3>
+                <ul>
+                    <li>Sierra Blue</li>
+                    <li>Graphite</li>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                </ul>
+            </section>
+        </section>
+        <section id="specs">
+            <h2>Specifications</h2>
+            <p>Key features and specs of the iPhone 15 series will appear here.</p>
+            <h3>Iphone 15 Specs</h3>
+            <ul>
+                <li>Display :6.1-inch Super Retina XDR</li>
+                <li>Chip: A16Bionic</li>
+                <li>Camera: 12MP Dual-Camera</li>
+                <li>Battery Life: 2800Mah</li>
+            </ul>
+            <h3>Iphone 15 Pro Specs:</h3>
+            <ul>
+                <li>Display: 6.7-inch Promotion OLED</li>
+                <li>Chip: A17 Bionic</li>
+                <li>Camera: 12MP Triple-CAmera</li>
+                <li>Battery Life: 3700Mah</li>
+            </ul>
+        </section>
+        <section id="slider">
+            <h2>Featured Modeles</h2>
+            <div class="slider">
+                <div><img src="images/iphone-15-black.jpg" alt="iPhone 15 Black"></div>
+                <div><img src="images/iphone-15-pro.jpg" alt="iPhone 15 Pro"></div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="mailto:yourmaster@uk.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 iPhone 15 Series Website</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToshow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</body>
+</html>
